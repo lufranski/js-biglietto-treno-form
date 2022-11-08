@@ -9,26 +9,58 @@
 </head>
 <body>
     
-    <!-- Tag di input -->
+    <!-- Titolo -->
+    <h2>Il mio biglietto</h2>
+    
+    <!-- Form biglietto -->
+    <div id="form-container">
 
-    <input type="text" placeholder="Inserisci il tuo nome e cognome" id="name">
+
+        <!-- Row -->
+        
+        <div id="row">
+
+            <div class="column">
+
+                <h4>Nome e Cognome:</h4>
+
+                <input type="text" placeholder="Inserisci il tuo nome e cognome" id="name" class="input">
+
+            </div>
+
+            <div class="column">
+
+                <h4>Km da percorrere:</h4>
+
+                <input type="text" placeholder="Inserisci la durata in km del viaggio" id="trip" class="input">
+
+            </div>
+
+            <div class="column">
+
+                <h4>Fascia d'et&aacute;:</h4>
+
+                <select name="age" id="age">
+                    <option value="under">Under 18</option>
+                    <option value="maggiorenne">Adulto</option>
+                    <option value="over">Over 65</option>
+                </select>
+
+            </div>
+        
+        </div>        
+
+        <button>Genera</button>
+        
+        <button id="reset">Annulla</button>
+
+        <p id="joke"></p>
     
-    <input type="text" placeholder="Inserisci la durata in km del viaggio" id="trip"> 
-    
-    <select name="age" id="age">
-        <option value="under">Under 18</option>
-        <option value="maggiorenne">Adulto</option>
-        <option value="over">Over 65</option>
-    </select>
-    
-    <button>Genera</button>
-    
-    <button id="reset">Annulla</button>
-    
+    </div>
 
     <!-- Elemento per l'output -->
 
-    <h1 id="title"></h1>
+    <div id="container"></div>
 
 
     <script type="text/javascript" src="js/main.js"></script>
